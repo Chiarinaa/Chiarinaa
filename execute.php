@@ -47,7 +47,7 @@
 		header("Content-Type: application/json");
 		//i parametri sono cosa voglio mandare indietro al mio utente
 		$parameters = array('chat_id' => $chatId, "text" => $text);
-		/*
+		
                    if($text == "data"){
 			$risp = "la data odierna è:".date("d.m.y");
 			$parameters = array('chat_id' => $chatId, "text" => $risp);
@@ -65,19 +65,18 @@
 				$i = rand(0,1);				
 				sendFoto($chatId, $foto[$i],false,"descrizione foto", $api);
 			}
-/*
                    if($text=="barze"){
 				//Salvo all'interno del vettore $barze 2 bazelette in posizioni differenti
-		   $barze[0] = "Che cos'è una zebra? Un cavallo evaso dal cxarcere!";
-		   $barze[1] = "Qual'è il colmo per un truffatore?Fare un buco nell'acqua."
-		   $barze[2] = "Chi la fa la vende, chi la compra non la usa, chi la usa non la vede, cos è???? La tomba."
-	           $barze[3] = "Qual'è il colmo per un giardiniere? Piantare la fidandata.";	
+		   $barze[0] = "Che cos è una zebra? Un cavallo evaso dal carcere!";
+		   $barze[1] = "Qual è il colmo per un truffatore?Fare un buco nell acqua.";
+		   $barze[2] = "Chi la fa la vende, chi la compra non la usa, chi la usa non la vede, cos è???? La tomba.";
+	           $barze[3] = "Qual è il colmo per un giardiniere? Piantare la fidandata.";	
 				//genero un numero random tra 0 e 2 e lo salvo nella variabile $i 
-		    $i = rand(0,3); 
-		 $parameters = array('chat_id' => $chatId, "text" => $barze[$i]);
+		   $i = rand(0,3); 
+		   $parameters = array('chat_id' => $chatId, "text" => $barze[$i]);
 		  }
 		
-*/		
+		
 		
 		//aggiungo il comando di invio
 		//e lo invio
