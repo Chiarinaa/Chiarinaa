@@ -52,7 +52,7 @@
 			$parameters = array('chat_id' => $chatId, "text" => $risp);
 		}
 		if($text == "ciao"){
-			$text="Benvenuto sul nostro BOT di telegram dell'IIS8MARZO";
+			$text="Benvenuto sul nostro BOT di telegram dell\'IIS8MARZO";
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 		}
 		if($text == "foto"){
@@ -63,6 +63,7 @@
 				$i = rand(0,1);				
 				sendFoto($chatId, $foto[$i],false,"descrizione foto", $api);
 			}
+/*
                    if($text=="barze"){
 				//Salvo all'interno del vettore $barze 2 bazelette in posizioni differenti
 		   $barze[0] = "Che cos'è una zebra? Un cavallo evaso dal cxarcere!";
@@ -74,7 +75,7 @@
 		 $parameters = array('chat_id' => $chatId, "text" => $barze[$i]);
 		  }
 		
-		
+*/		
 		
 		//aggiungo il comando di invio
 		//e lo invio
